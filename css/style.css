@@ -1,0 +1,647 @@
+        @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Dancing+Script:wght@700&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            scroll-behavior: smooth;
+        }
+        /* button WhatsApp */
+        /* nav-bar */
+        
+        .nav {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: 3px 3px 4px #383838;
+            height: 90px;
+        }
+        
+        .nav__bar,
+        ul,
+        li,
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            color: #383838;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            transition: 0.5s all ease-in-out;
+        }
+        
+        .nav__bar a:hover {
+            box-shadow: 4px 4px 4px 4px #949494;
+            transition: 0.6s all ease-in-out;
+        }
+        
+        .icon {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            color: #000;
+        }
+        
+        .image__a:hover {
+            background-color: rgb(0, 120, 54);
+            transition: 1s ease-in-out;
+        }
+        
+        .mobile-menu {
+            display: none;
+            cursor: pointer;
+        }
+        
+        .mobile-menu div {
+            width: 32px;
+            height: 2px;
+            background: #000000;
+            margin: 8px;
+            transition: 0.3s;
+        }
+        /*  menu responsivel */
+        
+        @media (max-width: 773px) {
+            body {
+                overflow-x: hidden;
+            }
+            .nav-list {
+                position: absolute;
+                top: 18vh;
+                right: 0;
+                width: 50vw;
+                height: 32vh;
+                background: #23232e;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                transform: translateX(100%);
+                transition: transform 0.3s ease-in;
+            }
+            .nav-list li {
+                margin-left: 0;
+                opacity: 0;
+            }
+            .mobile-menu {
+                display: block;
+            }
+            .nav-list.active {
+                transform: translateX(0);
+            }
+            @keyframes navLinkFade {
+                from {
+                    opacity: 0;
+                    transform: translateX(50px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+            .mobile-menu.active .line1 {
+                transform: rotate(-45deg) translate(-8px, 8px);
+            }
+            .mobile-menu.active .line2 {
+                opacity: 0;
+            }
+            .mobile-menu.active .line3 {
+                transform: rotate(-45deg) translate(-5px, 7px);
+            }
+        }
+        
+        .image__welcome img {
+            width: 100%;
+            height: 840px;
+            filter: brightness(25%);
+            position: absolute;
+        }
+        
+        .image__welcome h1 {
+            position: relative;
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            padding-left: 100px;
+            padding-top: 15%;
+            color: #a6a6a6;
+            font-family: Arial, sans-serif;
+            font-weight: 800;
+        }
+        
+        .image__welcome p {
+            position: relative;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            padding-left: 100px;
+            padding-top: 20px;
+            color: #929292;
+        }
+        
+        .image__welcome a {
+            width: 130px;
+            height: 50px;
+            position: relative;
+            font-size: 18px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            margin-left: 300px;
+            margin-top: 30px;
+            background-color: #929292;
+            color: #e3e1e1;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        /* section sobre mim */
+        
+        .sobre_mim_main {
+            padding-top: 400px;
+            height: 700px;
+        }
+        
+        .text__sobre {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        
+        .text__sobre h1 {
+            font-family: 'Dancing Script', cursiva;
+            font-weight: 500;
+            font-size: 50px;
+            margin-left: 50px;
+            color: #000;
+        }
+        
+        .text__sobre h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            margin-left: 50px;
+            margin-top: 10px;
+            font-size: 35px;
+            color: #000000;
+        }
+        
+        .text__sobre p {
+            margin-top: 20px;
+            margin-left: 50px;
+            font-size: 20px;
+            color: #a6a6a6;
+        }
+        
+        .sobre_container {
+            display: flex;
+            margin-left: 250px;
+            margin-top: 40px;
+            padding-bottom: 50px;
+        }
+        
+        .img_sobre img {
+            border-radius: 50%;
+            width: 300px;
+        }
+        /* Ebook */
+        
+        .ebook_container {
+            margin-top: 90px;
+            height: 650px;
+            background-color: #f0f0f0;
+        }
+        
+        .title_ebook h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+            font-size: 50px;
+            color: #000;
+            font-family: 'Dancing Script', cursiva;
+        }
+        
+        .book {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            margin-left: 60px;
+            gap: 50px;
+        }
+        
+        .book_button {
+            text-decoration: underline;
+            color: #9a9a9a;
+        }
+        
+        .book img {
+            cursor: pointer;
+            height: 290px;
+        }
+        
+        .img1,
+        .img2,
+        .img3 {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .img1,
+        .img2,
+        .img3,
+        h1 {
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            color: #929292;
+        }
+        
+        .img1,
+        .img2,
+        .img3,
+        .p_img3,
+        .book_button {
+            background-color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+        
+        .img1:hover,
+        .img2:hover,
+        .img3:hover {
+            box-shadow: 4px 4px 4px 4px #949494;
+            transition: 0.6s all ease-in-out;
+        }
+        /* contato */
+        
+        .contact {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+            padding-top: 20px;
+            width: 100%;
+            height: 700px;
+        }
+        
+        .h1_contact {
+            font-size: 38px;
+            font-family: 'Roboto', sans-serif;
+            color: #151515;
+        }
+        
+        .form_contato {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-left: 550px;
+        }
+        
+        .form_contato input {
+            height: 30px;
+            outline: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .form_contato label {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .form-group textarea {
+            width: 500px;
+            height: 80px;
+            outline: none;
+            font-size: 16px;
+            text-align: left;
+        }
+        
+        .btn-success {
+            border: none;
+            background-color: rgb(6, 148, 70);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            color: #FFF;
+            font-size: 17px;
+            height: 40px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        label {
+            color: #000;
+        }
+        
+        .btn-success:hover {
+            background-color: rgb(0, 120, 54);
+            transition: 1s ease-in-out;
+            box-shadow: 2px 2px 2px 2px #949494;
+        }
+        
+        .img_contact {
+            margin-right: 1500px;
+        }
+        
+        .img_contact img {
+            display: flex;
+            position: absolute;
+            border-radius: 10%;
+            margin-top: 150px;
+            width: 450px;
+        }
+        
+        footer {
+            background-color: #231F20;
+            margin-top: 50px;
+            height: 100px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+        }
+        
+        footer p {
+            text-align: center;
+            color: #FFFFFF;
+            font-family: "Josefin Sans", Sans-serif;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.2em;
+        }
+        /* responsivo */
+        
+        @media screen and (max-width: 1024px) {
+            .nav {
+                width: 100%;
+            }
+            .nav__bar,
+            ul,
+            li,
+            a {
+                font-size: 15px;
+                margin-left: -10px;
+            }
+            .image__welcome img {
+                height: 500px;
+            }
+            .image__welcome h1,
+            p {
+                margin-left: -50px;
+            }
+            .image__welcome h1 {
+                font-size: 35px;
+                text-align: end;
+            }
+            .image__welcome p {
+                font-size: 16px;
+                font-weight: 600;
+                color: #a6a6a6;
+            }
+            .image__welcome a {
+                font-size: 14px;
+                width: 120px;
+                height: 40px;
+                margin-left: 200px;
+            }
+            .sobre_mim_main {
+                height: 500px;
+                margin-right: 500px;
+                padding-top: 250px;
+                bottom: 10px;
+            }
+            .img_sobre img {
+                width: 220px;
+                position: absolute;
+                left: 40px;
+            }
+            .text__sobre {
+                position: absolute;
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+            .text__sobre h2 {
+                font-size: 30px;
+            }
+            .text__sobre p {
+                font-size: 14px;
+                font-weight: 600;
+                color: #5c5c5c;
+            }
+            .ebook_container {
+                position: relative;
+            }
+            .book {
+                gap: 50px;
+                margin-left: 100px;
+                position: relative;
+            }
+            .title_ebook h1 {
+                position: relative;
+            }
+            .book img {
+                width: 190px;
+                margin-left: -90px;
+                position: absolute;
+            }
+            .img1 {
+                display: flex;
+                flex-direction: column;
+            }
+            .img_contact img {
+                width: 300px;
+                margin-left: 350px;
+            }
+            .form-group textarea {
+                width: 400px;
+                margin-top: 10px;
+            }
+            .form_contato {
+                margin-right: 250px;
+            }
+            .btn-success {
+                margin-left: 130px;
+            }
+        }
+        
+        @media screen and (max-width: 568px) {
+            .image__welcome h1,
+            p,
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .image__welcome img {
+                height: 300px;
+                width: 100%;
+                max-width: 568px;
+            }
+            .image__welcome h1,
+            p {
+                margin-left: -93px;
+            }
+            .image__welcome h1 {
+                font-size: 20px;
+                text-align: center;
+                align-items: center;
+                margin-left: -90px;
+            }
+            .image__welcome p {
+                font-size: 12px;
+                font-weight: 600;
+                color: #848484;
+            }
+            .image__welcome a {
+                font-size: 12px;
+                width: 90px;
+                height: 35px;
+                margin-left: 120px;
+            }
+            /* sobre */
+            .sobre_mim_main {
+                height: 400px;
+                margin-right: 500px;
+                margin-top: -200px;
+            }
+            .img_sobre img {
+                width: 90px;
+                position: absolute;
+                margin-top: 65px;
+                left: 5px;
+            }
+            .text__sobre h1 {
+                font-size: 30px;
+                text-align: center;
+                margin-right: 50px;
+            }
+            .text__sobre {
+                margin-left: -195px;
+            }
+            .text__sobre h2 {
+                font-size: 14px;
+            }
+            .text__sobre p {
+                font-size: 11px;
+                font-weight: 600;
+                color: #a6a6a6;
+            }
+            .ebook_container {
+                margin-top: 90px;
+                height: 450px;
+                background-color: #f0f0f0;
+            }
+            .book {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 40px;
+                gap: 10px;
+            }
+            .title_ebook h1 {
+                font-size: 30px;
+            }
+            .ebook_container img {
+                height: 100px;
+                width: 110px;
+                display: flex;
+                margin-left: -80px;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+            .img1,
+            .img2,
+            .img3,
+            img {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                width: 170px;
+            }
+            .img1,
+            .img2,
+            .img3,
+            .p_img3,
+            .book_button {
+                background-color: #ffffff;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                width: 110px;
+                height: 90px;
+                padding: 10px;
+                border-radius: 0px;
+            }
+            .p_img3 {
+                font-size: 12px;
+                padding: 20px;
+                margin-right: -14px;
+            }
+            .book_button {
+                margin-right: 70px;
+                margin-top: -10px;
+                font-size: 12px;
+            }
+            .img1:hover {
+                transition: 1s ease-in-out;
+                box-shadow: 2px 2px 2px 2px #949494;
+            }
+            .img2:hover {
+                transition: 1s ease-in-out;
+                box-shadow: 2px 2px 2px 2px #949494;
+            }
+            .img3:hover {
+                transition: 1s ease-in-out;
+                box-shadow: 2px 2px 2px 2px #949494;
+            }
+            .h1_contact {
+                font-size: 35px;
+                margin-right: 80px;
+            }
+            .img_contact img {
+                width: 140px;
+                margin-left: 560px;
+                margin-top: 280px;
+                background-color: white;
+            }
+            .form-group textarea {
+                width: 180px;
+                margin-top: 10px;
+            }
+            .form_contato {
+                margin-right: 350px;
+            }
+            .form_contato input {
+                width: 180px;
+            }
+            .form_contato label {
+                margin-right: 100px;
+            }
+            .btn-success {
+                position: relative;
+                left: -110px;
+            }
+            footer p {
+                display: flex;
+                margin-left: 10px;
+                margin-top: -10px;
+                align-items: center;
+                justify-content: center;
+            }
+        }

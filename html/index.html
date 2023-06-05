@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutricionista</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/calculadora.css">
+
+
+    <!-- logo -->
+    <link rel="icon" href="/images/nutrition.png" width="60px">
+
+
+    <!-- bootstrap-->
+
+
+    <!-- button WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5519984091572&text=Texto%20aqui" target="_blank" style="position:fixed;bottom:20px;right:30px;" class="button_whats">
+        <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+    </a>
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <div class="nav__bar__container">
+
+            <div class="nav">
+                <div class="logo">
+                    <a href="index.html"><img src="/images/nutrition.png" width="45px" alt="logo" width="100px"></a>
+                </div>
+
+                <div class="nav__bar">
+
+                    <nav>
+                        <div class="mobile-menu">
+                            <div class="line1 "></div>
+                            <div class="line2 "></div>
+                            <div class="line3 "></div>
+                        </div>
+                        <ul class="nav-list">
+                            <li><a href=" index.html ">Home</a></li>
+                            <li><a href="#sobre_mim ">Sobre mim</a></li>
+                            <li><a href="#ebook ">Ebook</a></li>
+                            <li><a href="# ">Pré consulta</a></li>
+                            <li><a href="calculadora.html ">Calcule seu IMC</a></li>
+                            <li><a href="#contato ">Contato</a></li>
+                            <div class="icon ">
+                                <a href="https://www.facebook.com/reinaldo.silva.1029 " target="_blank "><svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " fill="currentColor " class="facebook_nav " viewBox="0 0 16 16 ">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303
+                    1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z "/>
+                              </svg></a>
+                                <a href="https://www.instagram.com/matheusksilva27/ " target="_blank "><svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " fill="currentColor " class="instagram_nav " viewBox="0 0 16 16 ">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372
+                    1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99
+                    10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035
+                    1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478
+                    2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034
+                    1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z "/>
+                              </svg></a>
+                                <a href="https://github.com/Matheuss2709 " target="_blank "><svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " fill="currentColor " class="whatsapp_nav " viewBox="0 0 16 16 ">
+                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994
+                    14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729
+                    0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z "/>
+                              </svg></a></a>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- welcome -->
+
+        <div class="welcome__container ">
+            <div class="image__welcome ">
+                <img src="/images/saude.jpg " alt=" ">
+                <h1 class="image__h1 ">Olá, seja bem-vindos(a)</h1>
+                <p class="image__p ">Aqui você encontra mais informações sobre o meu trabalho: atendimentos, <br> calculoImc, pré-consulta, dicas. Também vai encontrar receitas e informações em saúde.</p>
+                <a href="# " class="image__a ">Saiba Mais</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- section sobre mim -->
+
+    <section>
+
+        <div class="sobre_mim_main " id="sobre_mim ">
+
+            <div class="sobre_container ">
+
+                <div class="img_sobre ">
+                    <img src="/images/imagem_sobre.jpeg " alt=" " width="400px ">
+                </div>
+                <div class="text__sobre ">
+                    <h1>Sobre mim</h1>
+                    <h2>Prazer me chamo ...</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non rem autem et, porro ea eius temporibus cupiditate! <br>Exercitationem a fugiat quisquam nulla id voluptatum incidunt? Rerum dicta vitae tenetur!
+                        <br> e ao mesmo tempo proporcione ao seu corpo todos os nutrientes necessários para que ele seja saudável.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Ebook -->
+
+        <section>
+            <div class="ebook_container " id="#ebook ">
+                <div class="title_ebook ">
+                    <h1>Meus Ebooks</h1>
+
+                </div>
+
+                <div class="book " id="ebook ">
+                    <div class="img1 ">
+                        <img src="/images/livro1.jpg " alt=" " width="270px ">
+                        <p class="p_img3 ">Nutrição vai muito <br>além da alimentação...</p>
+                        <a href="# " class="book_button ">Saiba Mais</a>
+
+                    </div>
+
+                    <div class="img2 ">
+                        <img src="/images/livro2.jpg " alt=" " width="289px ">
+                        <p class="p_img3 ">Introdução à Nutrição:</p>
+                        <a href="# " class="book_button ">Saiba Mais</a>
+
+                    </div>
+
+                    <div class="img3 ">
+                        <img src="/images/livro3.jpg " alt=" " width="289px ">
+                        <p class="p_img3 ">Nutrição Esportiva <br>e do Exercício Físico</p>
+                        <a href="# " class="book_button ">Saiba Mais</a>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <!-- Contato -->
+
+        <section class="contact ">
+            <div class="img_contact ">
+                <img src="/images/mail.png " alt=" ">
+
+            </div>
+
+            <div class="form_contato " id="contato ">
+
+                <h1 class="h1_contact ">ENTRE EM CONTATO</h1>
+                <form action="https://formsubmit.co/your@email.com " method="POST ">
+                    <label for="name ">Nome</label>
+                    <input type="text " name="name " required>
+                    <label for="email ">E-mal</label>
+                    <input type="email " name="email " required>
+                    <label for="phone ">Celular (WhatsApp)</label>
+                    <input type="phone " name="phone " required>
+
+                    <div class="form-group ">
+                        <textarea placeholder="Sua Mensagem " class="form-control " name=" " id=" " cols="30 " rows="10 "></textarea>
+                    </div>
+                    <button type="submit " class="btn-success ">Enviar</button>
+
+                </form>
+            </div>
+        </section>
+
+
+
+        <!-- footer -->
+
+        <footer>
+
+
+            <p>Copyright © Matheus Silva</p>
+
+
+        </footer>
+
+
+        <!-- js -->
+        <script src="/js/script.js "></script>
+        <script src="/js/calculadora.js "></script>
+
+</body>
+
+</html>
